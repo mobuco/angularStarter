@@ -30,8 +30,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles",
+                "./node_modules/bootstrap/scss"
+              ]
+            },
             "styles": [
-              "src/styles.scss",
+              "src/styles/styles.scss",
               "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": [
@@ -102,8 +108,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles",
+                "./node_modules/bootstrap/scss"
+              ]
+            },
             "styles": [
-              "src/styles.scss",
+              "src/styles/styles.scss",
               "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": [

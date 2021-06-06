@@ -15,8 +15,14 @@ Steps to rebuild:
 
 3. Update angular.json in the `build` and `test` sections
 ```
+"stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles",
+                "./node_modules/bootstrap/scss"
+              ]
+            },
 "styles": [
-   "src/styles.scss",
+   "src/styles/styles.scss",
    "node_modules/bootstrap/scss/bootstrap.scss",
  ],
  "scripts": [
@@ -25,6 +31,16 @@ Steps to rebuild:
  ]
 ```
 
+4. Move the styles.scss file to the src/styles folder and add imports
+```
+/* Bootstrap */
+ @import 'bootstrap';
+
+ /* Custom */
+ @import 'variables';
+ @import 'mixins';
+ @import 'custom';
+```
 
 
 ## Development server
